@@ -1,37 +1,37 @@
 <h1 align="center">Aparna Krishnan</h1>
 
----
-
-<p align="center">Ph.D. Candidate · Theoretical Chemistry · Quantum Chemistry Software</p>
-
 <p align="center">
   <a href="https://aksharma412.github.io"><img src="https://img.shields.io/badge/Website-181717?logo=github&logoColor=white" alt="Website"></a>
   <a href="https://scholar.google.com/citations?user=2_NRMS8AAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
   <a href="https://www.linkedin.com/in/aparna-krishnan-57643a172/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
-## About
+I work on molecules that come in mirror-image pairs — like your left and right hands — and on the software that predicts how they interact with light. Which mirror image you get decides whether a drug works or harms, so it is worth computing accurately.
 
-- Ph.D. Candidate, [Crawford Group](https://crawford.chem.vt.edu), Department of Chemistry, Virginia Tech
-- Int. M.Sc. Chemistry + B.E. Mechanical Engineering, BITS Pilani Goa
-- Contributor to [PyCC](https://github.com/CrawfordGroup/pycc) — TD-EOM-CC methods, VCD pipelines, orbital decomposition
-- Derives the equations, then writes the code
+Most people either derive the equations or write the code. I do both, and I think that's the only way to do either one well.
 
-## Research
+### How I work
 
-Chiroptical spectroscopy from first principles · Analytic derivative theory — atomic axial tensors, polar tensors, Hessians · Real-time and unitary coupled-cluster · Scientific software for high-accuracy quantum chemistry.
+**Derive → prove → implement → validate.** In that order, and the last step is not optional. If the analytic result doesn't match finite difference to 10⁻⁷, it isn't finished.
 
-## Tech Stack
+- Analytic derivative theory for chiroptical spectroscopy — atomic axial tensors, polar tensors, Hessians at CISD, MP2, and CCSD
+- Real-time and unitary coupled-cluster dynamics
+- Occasionally, a proof that an equivalence everyone assumes holds actually doesn't
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/C++-00599C?logo=cplusplus&logoColor=white" alt="C++">
-  <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white" alt="NumPy">
-  <img src="https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white" alt="SciPy">
-  <img src="https://img.shields.io/badge/SymPy-3B5526?logo=sympy&logoColor=white" alt="SymPy">
-  <img src="https://img.shields.io/badge/HDF5-0092CB?logo=hdfgroup&logoColor=white" alt="HDF5">
-  <img src="https://img.shields.io/badge/Psi4-1E4B7A" alt="Psi4">
-  <img src="https://img.shields.io/badge/SLURM-2C3E50" alt="SLURM">
-  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" alt="Linux">
-  <img src="https://img.shields.io/badge/Qiskit-6929C4?logo=qiskit&logoColor=white" alt="Qiskit">
-</p>
+### Things I've built
+
+| | |
+|---|---|
+| [**PyCC**](https://github.com/CrawfordGroup/pycc) | Open-source Python coupled-cluster package. I contribute TD-EOM-CC methods, VCD pipelines, and orbital decomposition analysis. |
+| [**Biorthogonal Jacobi-Davidson**](https://github.com/aksharma412/Biorthogonal-Jacobi-Davidson-algorithm) | Non-Hermitian eigensolver for EOM-CC. Tracks left and right eigenvectors at once, 25× faster than direct diagonalization. |
+| [**CC equation generator**](https://github.com/aksharma412/dual_exponent_automatic_equation_and_code_generator) | Wick's theorem and BCH expansion done symbolically, emitting `np.einsum` code. Weeks of error-prone algebra, automated. |
+
+### Before quantum chemistry
+
+I trained as a mechanical engineer. Turns out tensors are tensors.
+
+### Tools
+
+`Python` · `C++` · `NumPy/SciPy` · `SymPy` · `HDF5` · `Psi4` · `Gaussian 16` · `CFOUR` · `SLURM` · `Qiskit`
+
+<sub>Ph.D. candidate, <a href="https://crawford.chem.vt.edu">Crawford Group</a>, Virginia Tech · Blacksburg, VA</sub>
