@@ -8,9 +8,9 @@
 
 I work on high accuracy quantum chemistry methods and the code that runs them. Most of my research is on chiral molecules: how they respond to light, and how to predict that from first principles.
 
-Projects usually start with a derivation and end with a working implementation, so I spend about equal time with a notebook and a debugger.
+### How I work
 
-### What I work on
+**Derive → prove → implement → validate.** In that order, and the last step is not optional.
 
 - Analytic derivative theory for chiroptical spectroscopy: atomic axial tensors, polar tensors, and Hessians at CISD, MP2, and CCSD
 - Real-time and unitary coupled-cluster dynamics
