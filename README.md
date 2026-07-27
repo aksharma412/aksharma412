@@ -6,25 +6,23 @@
   <a href="https://www.linkedin.com/in/aparna-krishnan-57643a172/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
-I work on molecules that come in mirror-image pairs — like your left and right hands — and on the software that predicts how they interact with light. Which mirror image you get decides whether a drug works or harms, so it is worth computing accurately.
+I work on high accuracy quantum chemistry methods and the code that runs them. Most of my research is on chiral molecules: how they respond to light, and how to predict that from first principles.
 
-Most people either derive the equations or write the code. I do both, and I think that's the only way to do either one well.
+Projects usually start with a derivation and end with a working implementation, so I spend about equal time with a notebook and a debugger.
 
-### How I work
+### What I work on
 
-**Derive → prove → implement → validate.** In that order, and the last step is not optional. If the analytic result doesn't match finite difference to 10⁻⁷, it isn't finished.
-
-- Analytic derivative theory for chiroptical spectroscopy — atomic axial tensors, polar tensors, Hessians at CISD, MP2, and CCSD
+- Analytic derivative theory for chiroptical spectroscopy: atomic axial tensors, polar tensors, and Hessians at CISD, MP2, and CCSD
 - Real-time and unitary coupled-cluster dynamics
-- Occasionally, a proof that an equivalence everyone assumes holds actually doesn't
+- Checking whether methods that should agree actually do, and working out why when they don't
 
 ### Things I've built
 
 | | |
 |---|---|
-| [**PyCC**](https://github.com/CrawfordGroup/pycc) | Open-source Python coupled-cluster package. I contribute TD-EOM-CC methods, VCD pipelines, and orbital decomposition analysis. |
-| [**Biorthogonal Jacobi-Davidson**](https://github.com/aksharma412/Biorthogonal-Jacobi-Davidson-algorithm) | Non-Hermitian eigensolver for EOM-CC. Tracks left and right eigenvectors at once, 25× faster than direct diagonalization. |
-| [**CC equation generator**](https://github.com/aksharma412/dual_exponent_automatic_equation_and_code_generator) | Wick's theorem and BCH expansion done symbolically, emitting `np.einsum` code. Weeks of error-prone algebra, automated. |
+| [**PyCC**](https://github.com/CrawfordGroup/pycc) | Open-source Python coupled-cluster package from our group. I contribute TD-EOM-CC methods, VCD pipelines, and orbital decomposition analysis. |
+| [**Biorthogonal Jacobi-Davidson**](https://github.com/aksharma412/Biorthogonal-Jacobi-Davidson-algorithm) | A non-Hermitian eigensolver for EOM-CC that tracks left and right eigenvectors together and keeps them biorthogonal. |
+| [**CC equation generator**](https://github.com/aksharma412/dual_exponent_automatic_equation_and_code_generator) | Applies Wick's theorem and the BCH expansion symbolically, then writes out the `np.einsum` code. Saves a lot of algebra by hand. |
 
 ### Before quantum chemistry
 
