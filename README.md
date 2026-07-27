@@ -1,46 +1,37 @@
-# Aparna Krishnan
-
-PhD candidate in theoretical chemistry, [Crawford Group](https://crawford.chem.vt.edu), Virginia Tech. Graduating 2027.
-
-I derive quantum chemistry methods and implement them. Most people do one or the other — the interesting problems need both. My work is in analytic derivative theory, real-time coupled-cluster dynamics, and the software that makes both run on real molecules.
-
-[Website](https://aksharma412.github.io) · [Google Scholar](#) · [LinkedIn](https://www.linkedin.com/in/aparna-krishnan-57643a172/) · aparnak22@vt.edu
+<h1 align="center">Aparna Krishnan</h1>
 
 ---
 
-### Research
+<p align="center">Ph.D. Candidate · Theoretical Chemistry · Quantum Chemistry Software</p>
 
-**Chiroptical spectroscopy from first principles.**
-Density-matrix formulation of atomic axial tensors for vibrational circular dichroism at the CISD, MP2, and CCSD levels — the property that determines absolute configuration of chiral molecules. Full analytic pipelines: Hessians, atomic polar tensors, atomic axial tensors, rotational strengths. Every stage validated against finite difference to better than 10⁻⁷.
+<p align="center">
+  <a href="https://aksharma412.github.io"><img src="https://img.shields.io/badge/Website-181717?logo=github&logoColor=white" alt="Website"></a>
+  <a href="https://scholar.google.com/citations?user=2_NRMS8AAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
+  <a href="https://www.linkedin.com/in/aparna-krishnan-57643a172/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</p>
 
-**Real-time coupled-cluster spectroscopy.**
-Real-time CC gives accurate absorption spectra but no explanation of what causes each peak. I developed methods that decompose any spectral feature into the individual orbital transitions responsible, using both the autocorrelation function and the dipole moment as the starting observable. The ACF route cuts storage by 95%.
-→ [arXiv:2605.17409](https://arxiv.org/abs/2605.17409), accepted in *J. Phys. Chem. A*
+## About
 
-**Unitary coupled-cluster.**
-In standard CC, real-time and equation-of-motion excitation energies are provably identical — an equivalence routinely used to validate new implementations. I showed it fails for the unitary ansatz: σ = T − T† does not commute with the excitation operators and its BCH expansion never terminates, so the two routes disagree at any finite truncation order. Derived the discrepancy in closed form and certified it against exact operator algebra to 10⁻¹².
+- Ph.D. Candidate, [Crawford Group](https://crawford.chem.vt.edu), Department of Chemistry, Virginia Tech
+- Int. M.Sc. Chemistry + B.E. Mechanical Engineering, BITS Pilani Goa
+- Contributor to [PyCC](https://github.com/CrawfordGroup/pycc) — TD-EOM-CC methods, VCD pipelines, orbital decomposition
+- Derives the equations, then writes the code
 
----
+## Research
 
-### Software
+Chiroptical spectroscopy from first principles · Analytic derivative theory — atomic axial tensors, polar tensors, Hessians · Real-time and unitary coupled-cluster · Scientific software for high-accuracy quantum chemistry.
 
-**[PyCC](https://github.com/CrawfordGroup/pycc)** — open-source Python coupled-cluster package from the Crawford Group.
-Contributor (16 merged commits). Implemented TD-EOM-CC methods, VCD pipelines, and the orbital decomposition analysis described above.
+## Tech Stack
 
-**[Biorthogonal Jacobi-Davidson](https://github.com/aksharma412/Biorthogonal-Jacobi-Davidson-algorithm)** — non-Hermitian eigensolver for EOM-CC.
-Tracks left and right eigenvectors simultaneously and enforces biorthogonality throughout. 25× faster than direct diagonalization on EOM-CC test matrices.
-
-**[Dual-exponent CC equation generator](https://github.com/aksharma412/dual_exponent_automatic_equation_and_code_generator)** — symbolic derivation to executable code.
-Takes a coupled-cluster ansatz, applies Wick's theorem via SymPy's `secondquant`, performs the BCH expansion to 4th order, and emits validated `np.einsum` code. Built at IIT Bombay for Prof. Rahul Maitra's group.
-
----
-
-### Tools
-
-`Python` `C++` `NumPy/SciPy` `SymPy` `h5py/HDF5` `Psi4` `Gaussian 16` `CFOUR` `SLURM / HPC` `Qiskit` `Cirq` `QDK`
-
----
-
-### Selected talks
-
-Invited talk, SERMACS 2026 · MES 2026 (Greece) · MRPSS 2025 (Stockholm) · ESQC 2024 (Palermo) · Best Poster Award, SETCA 2026
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/C++-00599C?logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white" alt="SciPy">
+  <img src="https://img.shields.io/badge/SymPy-3B5526?logo=sympy&logoColor=white" alt="SymPy">
+  <img src="https://img.shields.io/badge/HDF5-0092CB?logo=hdfgroup&logoColor=white" alt="HDF5">
+  <img src="https://img.shields.io/badge/Psi4-1E4B7A" alt="Psi4">
+  <img src="https://img.shields.io/badge/SLURM-2C3E50" alt="SLURM">
+  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/Qiskit-6929C4?logo=qiskit&logoColor=white" alt="Qiskit">
+</p>
